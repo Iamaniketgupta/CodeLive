@@ -1,6 +1,6 @@
 # CodeLive
 
-Live Demo: [Code Live](codeliveweb.netlify.app)
+Live Demo: [Code Live](https://codeliveweb.netlify.app)
 
 # Image
 
@@ -12,7 +12,7 @@ This Code Editor Web App is a simple web application that allows users to run HT
 
 ## Installation
 
-Follow these steps to install and run the NodeJS Weather Web App:
+Follow these steps to install and run the Code Live Web App:
 
  **Clone the Repository:**
 
