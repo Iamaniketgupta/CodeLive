@@ -40,6 +40,7 @@ body{
     font-size: 1.25rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 .navbar{
     flex: 1;
     text-align: right;
@@ -65,13 +66,31 @@ body{
     background: linear-gradient(25deg, red, yellow, green);
     background-clip: text;
     color: transparent;
-    text-shadow: none;
 }
 
 #color{
     width: 0px;
     height: 0px;
    visibility:hidden;
+}
+#colorval{
+    position: relative;
+    left: 50px;
+    font-weight: 800;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#copiedmsg{
+    display: inline-block;
+    background-color: gray;
+    position: fixed;
+    top:60px;
+    left: 50%;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: smaller;
+    transition: all ease;
+    z-index: 2;
+    display: none;
 }
 
 .editor-wrapper{
@@ -136,6 +155,7 @@ background-color: transparent;
     padding: 10px;
     border-radius: 10px;
 }
+
 .output-wrapper i,span{
     margin-bottom: 8px;
     font-weight: 800;

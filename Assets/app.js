@@ -7,10 +7,38 @@ const body=document.querySelector("body");
 themeBtn.addEventListener("click",()=>{
     
     body.classList.toggle("light");
-
     themeIcn.classList.toggle("fa-sun");
     themeIcn.classList.toggle("fa-moon");
 
+});
+
+/*
+    Color Picker
+*/
+
+const color=document.querySelector("#color");
+let colorval= document.querySelector("#colorval");
+colorval.textContent=color.value;
+
+color.addEventListener('input',()=>{
+    colorval.innerText=color.value;
+    colorval.style.background=`${color.value}`;
+    colorval.style.backgroundClip="text";
+    colorval.style.color="transparent";
+});
+
+color.addEventListener('change',()=>{
+    let copiedmsg =document.querySelector("#copiedmsg");
+    navigator.clipboard.writeText(colorval.innerText)
+    .then(()=>{
+        copiedmsg.style.display="block";
+        setTimeout(()=>{
+            copiedmsg.style.display="none";
+        },3000);
+    })
+    .catch(err=>{
+        console.error('Could not copy',err);
+    });
 });
 
 /* 
