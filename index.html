@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Live - HTML,CSS and JavaScript Editor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="/Assets/style.css">
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <!-- header -->
+        <div class="header">
+            <div class="logo">Code Live <i class="fa-solid fa-laptop-code" style="color: purple;"></i></div>
+            <div class="navbar">
+                <a href="#output"><i class="fa-solid fa-circle-play" onclick="run()"></i><label for="runcode"><span onclick="run()">Run</span></label></a>
+                <input type="color"id="color">
+            <label for="color"><i class="fa-solid fa-palette" id="color-picker"></i></label>
+                <i class="fa-solid fa-sun" id="themeBtn"></i>
+            </div>
+        </div>
+
+        <!-- Editor -->
+
+        <div class="editor-wrapper">
+            <div class="editor">
+                <i class="fa-brands fa-html5" style="color:red"></i><span><label for="html-code">HTML</label></span>
+                <textarea id="html-code" onkeyup="run()" ></textarea>
+            </div>
+            <div class="editor">
+                <i class="fa-brands fa-css3-alt" style="color:blue"></i><span><label for="css-code">CSS</label></span>
+
+                <textarea id="css-code" onkeyup="run()"></textarea>
+            </div>
+            <div class="editor">
+                <i class="fa-brands fa-js" style="color:yellow"></i><span><label for="js-code">JavaScript</label></span>
+                <textarea id="js-code" onkeyup="run()"></textarea>
+            </div>
+        </div>
+
+        <!-- Output -->
+        <div class="output-wrapper">
+            <span>&nbsp; Output </span><i class="fa-solid fa-code" style="color: purple;"></i>
+            <iframe id="output"></iframe>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer-wrapper">
+            <p>Made with <span style="color: red;">&hearts;</span> by <a href="https://github.com/iamaniketgupta">Aniket Gupta</a></p>
+        </div>
+
+        <script src="/Assets/app.js"></script>
+    </div>
+
+</body>
+
+</html>
