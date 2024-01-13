@@ -16,10 +16,10 @@ Follow these steps to install and run the Code Live Web App:
 
  **Clone the Repository:**
 
-    ```bash
+   ```bash
     gh repo clone Iamaniketgupta/CodeLive
     cd CodeLive
-    ```
+```
 
 ## Usage
 
